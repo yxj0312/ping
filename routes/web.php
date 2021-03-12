@@ -136,7 +136,7 @@ Route::get('reports', [ReportsController::class, 'index'])
     ->middleware('auth');
 
 Route::get('testing', function () {
-    return inertia('Testing/index');
+    return inertia('Testing/Index');
 })
 ->name('testing')
 ->middleware('auth');
